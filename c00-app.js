@@ -130,7 +130,7 @@ ngl.loadAttribute ( "colour" , colours , dimClr );
 
 function drawframe(){
 
-	mat4x4rot = nmg.genRotateAboutYmatrix( ydeg ) ;
+	mat4x4roty = nmg.genRotateAboutYmatrix( ydeg ) ;
 	nmm.multiply1x4times4x4 ( verts , mat4x4roty ) ;
 
 	ngl.loadAttribute ( "vert" , verts , dimVec );
